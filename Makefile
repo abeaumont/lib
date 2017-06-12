@@ -18,3 +18,7 @@ proto: github.com/bblfsh/sdk/protocol/generated.proto \
 
 	protoc --grpc_out src --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` github.com/bblfsh/sdk/protocol/generated.proto
 	$(CXX) -Isrc -fPIC -std=c++11 -I/usr/local/include -pthread  -c -o protocol.grpc.pb.o src/github.com/bblfsh/sdk/protocol/generated.grpc.pb.cc
+
+clean:
+	rm -rf src/github.com
+	rm -rf *.o *.so *.pyc __pycache__
