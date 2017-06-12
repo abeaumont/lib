@@ -5,6 +5,9 @@ It includes a C++ [gRPC](http://www.grpc.io/) client,
 a minimal C API wrapper over this C++ code
 and a Python example on top of this C API.
 
+Have a look at the [DESIGN](DESIGN.md) document
+for more information about why C++ was chosen.
+
 It may be interesting to use [SWIG](http://www.swig.org/)
 to generate bindings instead of doing it by hand.
 Alternatively python bindings could be constructed
